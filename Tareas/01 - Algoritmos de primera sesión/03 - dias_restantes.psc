@@ -6,24 +6,24 @@ Algoritmo dias_restantes
 		Leer m
 		Si 0<m Y m<=12 Entonces
 			Según m Hacer
-				1, 3, 5, 7, 8, 10, 12:
-					res <- 31-d
+				2:
+					res <- 28-d
 				4, 6, 9, 11:
 					res <- 30-d
 				De Otro Modo:
-					res <- 28-d
+					res <- 31-d
 			FinSegún
 			Si res>=0 Entonces
 				Mientras m<>12 Hacer
+					m <- m+1
 					Según m Hacer
-						1, 3, 5, 7, 8, 10, 12:
-							res <- res+31
+						2:
+							res <- res+28
 						4, 6, 9, 11:
 							res <- res+30
 						De Otro Modo:
-							res <- res+28
+							res <- res+31
 					FinSegún
-					m <- m+1
 				FinMientras
 				Escribir 'Días restantes: ', res
 			SiNo
