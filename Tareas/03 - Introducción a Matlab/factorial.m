@@ -26,8 +26,9 @@ while true
 end
 
 % Calcular factorial (método iterativo)
-for i = 1 : limite
+fprintf('%d!: ', limite);
+for i = limite : -1 : 2
     resultado = resultado * i;
+    fprintf('%d x ', i);
 end
-
-fprintf('Resultado: %d\n', resultado);
+fprintf('1 = %d\n', resultado);
