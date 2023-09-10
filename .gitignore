@@ -1,3 +1,7 @@
 # Archivos específicos
+*.asv
 *.docx
+
+# Directorios específicos
+Notas/
 
